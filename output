@@ -1,0 +1,45 @@
+ S -> X0 A
+    | X1 A
+    | a
+    | X1 B
+    | A B
+    | X1 S
+    | d
+    | X2 S
+    | X3 A
+    | X4 A
+    | X5 A
+    | b
+    | X5 B
+    | X6 A
+    | A X5
+    | X6 B
+ A -> d
+    | X2 S
+    | X3 A
+    | X4 A
+    | X5 A
+    | b
+    | X5 B
+    | X6 A
+    | A X5
+    | X6 B
+ B -> a
+    | X1 S
+    | d
+    | X2 S
+    | X3 A
+    | X4 A
+    | X5 A
+    | b
+    | X5 B
+    | X6 A
+    | A X5
+    | X6 B
+X0 -> X1 B
+X1 -> a
+X2 -> d
+X3 -> X6 B
+X4 -> X5 B
+X5 -> b
+X6 -> A X5
